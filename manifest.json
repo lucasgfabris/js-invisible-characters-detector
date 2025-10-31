@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Invisible Characters Detector",
+  "version": "1.0.0",
+  "description": "Detecta e destaca visualmente caracteres invisíveis (nbsp, zero-width spaces, etc) em páginas web",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/iconsm.ico",
+      "48": "icons/iconmd.ico",
+      "128": "icons/iconlg.ico"
+    }
+  },
+  "icons": {
+    "16": "icons/iconsm.ico",
+    "48": "icons/iconmd.ico",
+    "128": "icons/iconlg.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
+

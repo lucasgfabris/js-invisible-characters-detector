@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No-NBSP Highlighter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Invisible Chars</h1>
+      <p class="subtitle">Detector de Caracteres Invisíveis</p>
+    </div>
+    
+    <div class="content">
+      <button id="toggleBtn" class="btn btn-primary">
+        <span id="btnText">Ativar Detecção</span>
+      </button>
+      
+      <div class="info">
+        <div class="info-item">
+          <span class="label">Status:</span>
+          <span id="status" class="status">Inativo</span>
+        </div>
+      </div>
+      
+      <div class="description">
+        <p>Esta extensão detecta e destaca visualmente TODOS os caracteres invisíveis presentes na página atual.</p>
+        <ul>
+          <li>✨ NBSP, Zero-Width Spaces e mais</li>
+          <li>🎯 Detecção automática ao carregar</li>
+          <li>📊 Contador e identificação detalhada</li>
+          <li>🔍 Tooltip com código Unicode</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>v1.0.0</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

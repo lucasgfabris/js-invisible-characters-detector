@@ -1,0 +1,69 @@
+/* Estilo para destacar caracteres invisíveis */
+.no-nbsp-highlight {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.7) 0%, rgba(255, 193, 7, 0.7) 100%) !important;
+  border: 2px solid #ff6b6b !important;
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+  margin: 0 2px !important;
+  cursor: help !important;
+  position: relative !important;
+  display: inline-block !important;
+  min-width: 12px !important;
+  min-height: 18px !important;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.6), inset 0 0 3px rgba(255, 255, 255, 0.5) !important;
+  animation: pulse-glow 2s infinite !important;
+  vertical-align: baseline !important;
+  line-height: 1 !important;
+  font-size: inherit !important;
+  white-space: pre !important;
+}
+
+/* Ícone indicador no centro */
+.no-nbsp-highlight::before {
+  content: '⚠' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #d32f2f !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  pointer-events: none !important;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8) !important;
+  z-index: 1 !important;
+}
+
+/* Wrapper processado - invisível mas mantém estrutura */
+.no-nbsp-processed {
+  display: inline !important;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.6), inset 0 0 3px rgba(255, 255, 255, 0.5);
+    border-color: #ff6b6b;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.9), inset 0 0 5px rgba(255, 255, 255, 0.7);
+    border-color: #ff3838;
+  }
+}
+
+/* Notificação flutuante */
+.no-nbsp-notification {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  padding: 15px 25px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  z-index: 999999 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: opacity 0.3s ease !important;
+  opacity: 1 !important;
+}
+
