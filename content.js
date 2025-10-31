@@ -332,7 +332,7 @@
     
     // Adiciona contador no canto da tela
     const count = document.querySelectorAll('.no-nbsp-highlight').length;
-    showNotification(`${count} caractere${count !== 1 ? 's' : ''} invisível${count !== 1 ? 'eis' : ''} encontrado${count !== 1 ? 's' : ''}`);
+    showNotification(`${count} caractere${count !== 1 ? 's' : ''} invisíve${count !== 1 ? 'is' : 'l'} encontrado${count !== 1 ? 's' : ''}`);
   }
 
   // Função para desativar o highlight
