@@ -1,103 +1,88 @@
-# Invisible Characters Detector 🔍
+# Invisible Characters Detector
 
-Uma extensão do Chrome que detecta e destaca visualmente **TODOS** os caracteres invisíveis presentes em páginas web.
+![GitHub repo size](https://img.shields.io/github/repo-size/lucasgfabris/invisible-characters-detector?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/lucasgfabris/invisible-characters-detector?style=for-the-badge)
 
-## 🌟 Funcionalidades
+> Extensao do Chrome que detecta e destaca visualmente mais de 100 tipos de caracteres invisiveis em paginas web, incluindo NBSP, Zero-Width Space, Hangul Fillers e muitos outros.
 
-- ✨ **Detecção Completa**: Detecta 100+ tipos de caracteres invisíveis
-- 🎯 **Detecção Automática**: Ativa automaticamente ao carregar a página
-- 📊 **Contador Detalhado**: Mostra quantos caracteres invisíveis foram encontrados
-- 🔍 **Tooltip Informativo**: Mostra o nome e código Unicode de cada caractere
-- 🎨 **Interface Moderna**: Popup bonito e intuitivo
-- ⚡ **Performance**: Processamento eficiente mesmo em páginas grandes
-- 🌐 **Suporte Unicode Completo**: Incluindo pares surrogate (caracteres > U+FFFF)
+<img src="imagem.png" alt="Invisible Characters Detector">
 
-## 🎯 Caracteres Detectados
+## Pre-requisitos
 
-### Espaços Especiais
-- Non-Breaking Space (U+00A0) - o famoso `&nbsp;`
-- Zero Width Space (U+200B)
-- Zero Width Non-Joiner (U+200C)
-- Zero Width Joiner (U+200D)
-- En Space, Em Space, Thin Space, Hair Space
-- Ideographic Space (U+3000)
-- E muitos outros...
+Antes de comecar, verifique se voce atendeu aos seguintes requisitos:
 
-### Caracteres Invisíveis Especiais
-- **Hangul Fillers** (U+1160 - ㅤ) - o caractere invisível coreano
-- Soft Hyphen (U+00AD)
-- Word Joiner (U+2060)
-- Zero Width No-Break Space (U+FEFF)
+- Google Chrome ou navegador compativel com Manifest V3
+- Modo do desenvolvedor ativado no Chrome
 
-### Caracteres de Controle
-- Line Separator (U+2028)
-- Paragraph Separator (U+2029)
-- Caracteres de controle C0 e C1
-- Formatação bidirecional (LTR/RTL)
+## Instalando
 
-### Operadores Invisíveis
-- Invisible Times (U+2062)
-- Invisible Separator (U+2063)
-- Invisible Plus (U+2064)
+Para instalar o Invisible Characters Detector, siga estas etapas:
 
-### Outros
-- Combining Marks (quando sozinhos)
-- Variation Selectors
-- Tag Characters
-- E mais 100+ caracteres!
-
-## 📦 Instalação
-
-1. Clone ou baixe este repositório
-2. Abra o Chrome e vá para `chrome://extensions/`
+1. Clone ou baixe este repositorio
+2. Abra o Chrome e va para `chrome://extensions/`
 3. Ative o "Modo do desenvolvedor" no canto superior direito
-4. Clique em "Carregar sem compactação"
-5. Selecione a pasta do projeto `no-nbsp`
+4. Clique em "Carregar sem compactacao"
+5. Selecione a pasta do projeto
 
-## 🚀 Como Usar
+## Usando
 
-1. Navegue até qualquer página web
-2. A extensão detectará automaticamente os `&nbsp;` ao carregar
-3. Clique no ícone da extensão para ver o status
-4. Use o botão "Ativar/Desativar Detecção" para controlar a marcação
+Para usar o Invisible Characters Detector, siga estas etapas:
 
-## 🎨 Visualização
+1. Navegue ate qualquer pagina web
+2. A extensao detectara automaticamente os caracteres invisiveis ao carregar
+3. Clique no icone da extensao para ver o status
+4. Use o botao "Ativar/Desativar Deteccao" para controlar a marcacao
 
-Os caracteres invisíveis são marcados com:
+### Visualizacao
+
+Os caracteres invisiveis sao marcados com:
 - Fundo gradiente vermelho-amarelo vibrante
-- Borda vermelha pulsante com animação
-- Ícone de alerta (⚠) no centro
-- Tooltip detalhado ao passar o mouse mostrando:
-  - Nome do caractere
-  - Código Unicode (U+XXXX)
-  - Código decimal
+- Borda vermelha pulsante com animacao
+- Icone de alerta no centro
+- Tooltip detalhado ao passar o mouse mostrando nome e codigo Unicode
 
-## 🛠️ Tecnologias
+### Caracteres Detectados
 
-- JavaScript (Vanilla)
-- Chrome Extension Manifest V3
-- CSS3 com animações
-- Content Scripts
+| Categoria | Exemplos |
+|-----------|----------|
+| Espacos Especiais | Non-Breaking Space (U+00A0), Zero Width Space (U+200B), En Space, Em Space |
+| Caracteres Invisiveis | Hangul Fillers (U+1160), Soft Hyphen (U+00AD), Word Joiner (U+2060) |
+| Controle | Line Separator (U+2028), Paragraph Separator (U+2029) |
+| Operadores Invisiveis | Invisible Times (U+2062), Invisible Separator (U+2063) |
+| Outros | Combining Marks, Variation Selectors, Tag Characters |
 
-## 📝 Estrutura do Projeto
+## Tecnologias
+
+| Categoria | Tecnologias |
+|-----------|-------------|
+| Linguagem | JavaScript (Vanilla) |
+| Plataforma | Chrome Extension Manifest V3 |
+| Estilos | CSS3 com animacoes |
+| Injecao | Content Scripts |
+
+## Estrutura do Projeto
 
 ```
-no-nbsp/
-├── manifest.json       # Configuração da extensão
-├── content.js          # Script de detecção e marcação
-├── content.css         # Estilos para marcação
+invisible-characters-detector/
+├── manifest.json       # Configuracao da extensao
+├── content.js          # Script de deteccao e marcacao
+├── content.css         # Estilos para marcacao
 ├── popup.html          # Interface do popup
 ├── popup.css           # Estilos do popup
-├── popup.js            # Lógica do popup
-├── icons/              # Ícones da extensão
-└── README.md           # Este arquivo
+├── popup.js            # Logica do popup
+└── icons/              # Icones da extensao
 ```
 
-## 🤝 Contribuindo
+## Contribuindo
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+Para contribuir com Invisible Characters Detector, siga estas etapas:
 
-## 📄 Licença
+1. Bifurque este repositorio.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faca suas alteracoes e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_branch>`
+5. Crie a solicitacao de pull.
 
-MIT License - sinta-se livre para usar e modificar!
+## Licenca
 
+Esse projeto esta sob licenca MIT.
