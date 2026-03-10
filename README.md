@@ -1,7 +1,7 @@
-# Invisible Characters Detector
+# Chrome Invisible Characters Detector
 
-![GitHub repo size](https://img.shields.io/github/repo-size/lucasgfabris/invisible-characters-detector?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/lucasgfabris/invisible-characters-detector?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/lucasgfabris/chrome-invisible-characters-detector?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/lucasgfabris/chrome-invisible-characters-detector?style=for-the-badge)
 
 > Extensao do Chrome que detecta e destaca visualmente mais de 100 tipos de caracteres invisiveis em paginas web, incluindo NBSP, Zero-Width Space, Hangul Fillers e muitos outros.
 
@@ -16,9 +16,9 @@ Antes de comecar, verifique se voce atendeu aos seguintes requisitos:
 
 ## Instalando
 
-Para instalar o Invisible Characters Detector, siga estas etapas:
+Para instalar o Chrome Invisible Characters Detector, siga estas etapas:
 
-1. Clone ou baixe este repositorio
+1. Clone o repositório: `git clone https://github.com/lucasgfabris/chrome-invisible-characters-detector.git` e entre na pasta, ou baixe o ZIP
 2. Abra o Chrome e va para `chrome://extensions/`
 3. Ative o "Modo do desenvolvedor" no canto superior direito
 4. Clique em "Carregar sem compactacao"
@@ -26,7 +26,7 @@ Para instalar o Invisible Characters Detector, siga estas etapas:
 
 ## Usando
 
-Para usar o Invisible Characters Detector, siga estas etapas:
+Para usar o Chrome Invisible Characters Detector, siga estas etapas:
 
 1. Navegue ate qualquer pagina web
 2. A extensao detectara automaticamente os caracteres invisiveis ao carregar
@@ -63,7 +63,7 @@ Os caracteres invisiveis sao marcados com:
 ## Estrutura do Projeto
 
 ```
-invisible-characters-detector/
+chrome-invisible-characters-detector/
 ├── manifest.json       # Configuracao da extensao
 ├── content.js          # Script de deteccao e marcacao
 ├── content.css         # Estilos para marcacao
@@ -75,7 +75,7 @@ invisible-characters-detector/
 
 ## Contribuindo
 
-Para contribuir com Invisible Characters Detector, siga estas etapas:
+Para contribuir com Chrome Invisible Characters Detector, siga estas etapas:
 
 1. Bifurque este repositorio.
 2. Crie um branch: `git checkout -b <nome_branch>`.
